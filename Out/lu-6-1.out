@@ -1,0 +1,80 @@
+ Using 16 processes and 24 threads per process
+
+
+ NAS Parallel Benchmarks (NPB3.3-MZ-MPI) - LU-MZ MPI+OpenMP Benchmark
+
+ Number of zones:   4 x   4
+ Iterations: 300    dt:   1.000000
+ Number of active processes:    12
+
+ Use the default load factors with threads
+ Total number of threads:    288  ( 24.0 threads/process)
+
+ Calculated speedup =    288.00
+
+ Time step    1
+ Time step   20
+ Time step   40
+ Time step   60
+ Time step   80
+ Time step  100
+ Time step  120
+ Time step  140
+ Time step  160
+ Time step  180
+ Time step  200
+ Time step  220
+ Time step  240
+ Time step  260
+ Time step  280
+ Time step  300
+
+ Verification being performed for class D
+ Accuracy setting for epsilon =  0.1000000000000E-07
+ Comparison of RMS-norms of residual
+           1   0.3282253166388E+06 0.3282253166388E+06 0.1436458522540E-13
+           2   0.3490781637713E+05 0.3490781637713E+05 0.8316495814849E-13
+           3   0.8610311978292E+05 0.8610311978292E+05 0.1740758374726E-13
+           4   0.7004896022603E+05 0.7004896022603E+05 0.5962115150696E-13
+           5   0.4546838584391E+06 0.4546838584391E+06 0.6746541961420E-13
+ Comparison of RMS-norms of solution error
+           1   0.6620775619126E+04 0.6620775619126E+04 0.5934375876308E-13
+           2   0.5229798207352E+03 0.5229798207352E+03 0.2043398678520E-13
+           3   0.1620218261697E+04 0.1620218261697E+04 0.9641029157756E-13
+           4   0.1404783445006E+04 0.1404783445006E+04 0.1557061884193E-12
+           5   0.1222629805121E+05 0.1222629805121E+05 0.1987657942706E-12
+ Comparison of surface integral
+               0.2059421629621E+05 0.2059421629621E+05 0.2119806117271E-14
+ Verification Successful
+
+
+ LU-MZ Benchmark Completed.
+ Class           =                        D
+ Size            =           1632x 1216x 34
+ Iterations      =                      300
+ Time in seconds =                  1092.98
+ Total processes =                       12
+ Total threads   =                      288
+ Mop/s total     =                 34417.23
+ Mop/s/thread    =                   119.50
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.3.1
+ Compile date    =              30 Mar 2023
+
+ Compile options:
+    F77          = mpiifort
+    FLINK        = $(F77)
+    F_LIB        = (none)
+    F_INC        = (none)
+    FFLAGS       = -O3 -qopenmp
+    FLINKFLAGS   = -O3 -qopenmp
+    RAND         = (none)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
