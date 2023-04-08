@@ -24,4 +24,3 @@ srun --nodes=4 --ntasks=96 --cpus-per-task=2 $NAS_PATH/bt-mz.D.96
 srun --nodes=4 --ntasks=192 --cpus-per-task=1 $NAS_PATH/bt-mz.D.192
 
 
-

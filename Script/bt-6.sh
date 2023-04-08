@@ -21,7 +21,15 @@ srun --nodes=6 --ntasks=36 --cpus-per-task=8 $NAS_PATH/bt-mz.D.36
 srun --nodes=6 --ntasks=48 --cpus-per-task=6 $NAS_PATH/bt-mz.D.48
 srun --nodes=6 --ntasks=72 --cpus-per-task=4 $NAS_PATH/bt-mz.D.72
 srun --nodes=6 --ntasks=144 --cpus-per-task=2 $NAS_PATH/bt-mz.D.144
-srun --nodes=6 --ntasks=2w88 --cpus-per-task=1 $NAS_PATH/bt-mz.D.288
+srun --nodes=6 --ntasks=288 --cpus-per-task=1 $NAS_PATH/bt-mz.D.288
 
 
 
+6 & 12 & 24 \\
+6 & 18 & 16 \\
+6 & 24 & 12 \\
+6 & 36 & 8 \\
+6 & 48 & 6 \\
+6 & 72 & 4 \\
+6 & 144 & 2  \\
+6 & 288 & 1  \\
