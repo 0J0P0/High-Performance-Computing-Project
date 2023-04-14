@@ -23,3 +23,5 @@ srun --nodes=4 --ntasks=48 --cpus-per-task=4 $NAS_PATH/bt-mz.D.48
 srun --nodes=4 --ntasks=96 --cpus-per-task=2 $NAS_PATH/bt-mz.D.96
 srun --nodes=4 --ntasks=192 --cpus-per-task=1 $NAS_PATH/bt-mz.D.192
 
+# version secuencial para el calculo del speedup empirico
+# srun --nodes=1 --ntasks=8 --cpus-per-task=1 $NAS_PATH/bt-mz.D.8

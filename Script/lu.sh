@@ -23,10 +23,5 @@ srun --nodes=6 --ntasks=12 --cpus-per-task=24 $NAS_PATH/lu-mz.D.12
 
 srun --nodes=8 --ntasks=16 --cpus-per-task=24 $NAS_PATH/lu-mz.D.16
 
-
-
-4 & 8 & 24\\
-4 & 12 & 16 \\
-4 & 16 & 12 \\
-6 & 12 & 24 \\
-8 & 16 & 24 \\
+# version secuencial para el calculo del speedup empirico
+# srun --nodes=1 --ntasks=8 --cpus-per-task=1 $NAS_PATH/lu-mz.D.8
