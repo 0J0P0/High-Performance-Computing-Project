@@ -7,7 +7,7 @@
 #SBATCH --qos=debug
 
 # Modificad esta linea con vuestro PATH a los ejecutables
-export NAS_PATH=/home/nct01/nct01175/S2/NPB3.3.1-MZ/NPB3.3-MZ-MPI/bin
+export NAS_PATH=/home/nct01/nct01175/Project/NPB3.3.1-MZ/NPB3.3-MZ-MPI/bin
 
 echo "Using $SLURM_NTASKS processes and $SLURM_CPUS_PER_TASK threads per process"
 export OMP_NUM_THREADS=$SLURM_CPUS_PER_TASK

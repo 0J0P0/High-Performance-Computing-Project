@@ -1,10 +1,9 @@
 #!/bin/bash
 #SBATCH --job-name=bt-mz
-#SBATCH --output=bt-mz_%j.out
-#SBATCH --error=bt-mz_%j.err
-#SBTACH --nodes=4
-#SBATCH --ntasks=192
-#SBATCH --cpus-per-task=24
+#SBATCH --output=./out/bt-mz_%j.out
+#SBATCH --error=./err/bt-mz_%j.err
+#SBTACH --nodes=6
+#SBATCH --ntasks=288
 #SBATCH --qos=debug
 
 # Modificad esta linea con vuestro PATH a los ejecutables
@@ -12,6 +11,7 @@ export NAS_PATH=/home/nct01/nct01175/Project/NPB3.3.1-MZ/NPB3.3-MZ-MPI/bin
 
 echo "Using $SLURM_NTASKS processes and $SLURM_CPUS_PER_TASK threads per process"
 export OMP_NUM_THREADS=$SLURM_CPUS_PER_TASK
+
 
 # bt-mz.D.x with 6 nodes
 srun --nodes=6 --ntasks=12 --cpus-per-task=24 $NAS_PATH/bt-mz.D.12
@@ -23,13 +23,3 @@ srun --nodes=6 --ntasks=72 --cpus-per-task=4 $NAS_PATH/bt-mz.D.72
 srun --nodes=6 --ntasks=144 --cpus-per-task=2 $NAS_PATH/bt-mz.D.144
 srun --nodes=6 --ntasks=288 --cpus-per-task=1 $NAS_PATH/bt-mz.D.288
 
-
-
-6 & 12 & 24 \\
-6 & 18 & 16 \\
-6 & 24 & 12 \\
-6 & 36 & 8 \\
-6 & 48 & 6 \\
-6 & 72 & 4 \\
-6 & 144 & 2  \\
-6 & 288 & 1  \\
